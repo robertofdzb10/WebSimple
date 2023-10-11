@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+*{ /* Todos los elementos en una página web. */
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; /* Esto significa que si estableces un ancho (width) y un alto (height) para un elemento y luego agregas relleno y borde, el contenido del elemento se ajustará para mantener el tamaño total que has definido, en lugar de expandirse para acomodar el relleno y el borde adicionales. */
+}
+
+body{
+    font-family: 'ubuntu';
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+   display:flex; /* Cuando se aplica display: flex; a un contenedor, los elementos secundarios dentro de ese contenedor se convierten en elementos flexibles (flex items) y pueden ser alineados y distribuidos de diversas maneras usando propiedades relacionadas con flexbox.*/
+   align-items: center; 
+   padding: 30px;
+   justify-content: center;
+}
+
+.container-title{
+    padding: 30px;
+    background-color: #eee;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+main{
+    display:flex;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.container-img{
+    background-color:#f7f7f9 ;
+    flex: 1; /* Los elementos se distribuirán en el espacio disponible de manera uniforme entre ellos, haciendo que cada elemento tenga el mismo tamaño relativo en el contenedor. */
+}
+
+.container-info-product{
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Se esta indicando que los elementos flexibles dentro del contenedor se deben apilar verticalmente en columnas en lugar de en filas. */
+}
+
+.container-price{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Los elementos flexibles se colocan con espacio entre ellos, lo que significa que el primer elemento estará alineado al inicio del contenedor, el último elemento estará alineado al final del contenedor y cualquier espacio restante se distribuirá de manera uniforme entre los elementos. */
+}
+
+.container-price span{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.container-details-product{
+    padding: 30px 0;
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre las filas y las columnas. */
+    margin-bottom: 15px
+}
+
+.form-group label{
+    width: 100px;
+    color:#222;
+    font-weight: 700;
+}
+
+.form-group select{
+    width: 300px;
+    border: none;
+    padding: 12px 15px;
+    background-color: #f7f7f7;
+    outline: none; /* Outline en CSS se utiliza para establecer un contorno alrededor de un elemento */
+    color: #666;
+}
+
+.btn-clean{
+    border: none;
+    background: none;
+    color: #666;
+    margin-left: 120px;
+    cursor: pointer; /* El cursor debe cambiar a la forma de una mano (como un puntero) cuando se coloca sobre el elemento, lo que sugiere que el elemento es interactivo y se puede hacer clic. */
+}
+
+.btn-clean:hover{ /* Hover, cuando el mouse esta sobre el */
+    color:#1bbeb4;
+}
+
+.container-add-cart{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.container-quantity{
+    position: relative; /* Para establecer la posición de un elemento en relación con su posición original en el flujo del documento */
+}
+
+.input-quantity{
+    background-color: #f7f7f7;
+    border: none;
+    padding: 10px;
+    width: 60px;
+    height: 100%;
+    color: #666;
+    font-weight: 500;
+}
+
+.input-quantity:focus{ /* Cuando se hace click sobre el elemento */
+    outline:none;
+}
+
+.btn-add-to-cart{
+    border: none;
+    background-color: #252525;
+    padding: 10px;
+    color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*Quitar*/
+.hidden{
+    display: none;
+}
+/* Todos los estilos aplicarán a todas estas clases, de ahí el uso de la coma */
+
+.container-description,
+.container-aditional-information,
+.container-reviews{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 10px 0;
+}
+
+.title-description,
+.title-aditional-information,
+.title-reviews{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.title-description h4,
+.title-aditional-information h4,
+.title-reviews h4{
+    font-weight: 300;
+    color: #666;
+    font-size:14px;
+}
+
+.text-description,
+.text-aditional-information,
+.text-description{
+    font-size: 13px;
+    color: #252525;
+    line-height: 22px;
+    margin-top: 25px;
+}
+
+.container-social{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.container-social span{
+    font-weight: 300;
+    color: #252525;
+
+}
+
+.container-buttoms-social{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.container-buttoms-social a:link, /* El link */
+.container-buttoms-social a:visited{ /* El link cuando ha sido visitado */
+    color:#666;
+    font-size: 15px;
+}
+
+.container-buttoms-social a:hover{
+    color: #1bbeb4;
+}
+
+.container-related-products h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-list-products{
+    display: grid; /* Contenedor de cuadrícula */
+    grid-template-columns: repeat(4, 1fr); /* Significa que se están creando cuatro columnas, y cada una de ellas tiene un ancho igual, ya que se especifica 1fr */
+    gap: 25px;
+}
+
+.card{
+    cursor: pointer;
+}
+
+.card-img{
+    background: transparent;
+    margin-bottom: 15px;
+}
+
+.card-img img{
+    height: 300px;
+    width: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    vertical-align: middle;
+    object-fit: cover; /* Ajustará el contenido de la imagen para que cubra completamente el contenedor manteniendo su relación de aspecto. */
+    
+}
+
+.info-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-product{
+    color: #252525;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.text-product h3{
+    color: inherit; /* Se utiliza inherit para establecer el color, er este caso, al mismo color que su elemento padre */
+    font-weight: inherit;
+    font-size: 15px;
+}
+
+.text-product h3:hover{
+    color: #1bbeb4;
+}
+
+.text-product p{
+    color: #666;
+    font-size: 13px;
+}
+
+.text-product p:hover{
+    color: #1bbeb4;
+}
+
+footer{
+    padding: 30px;
+    background-color: #eee;
+    margin-top: 50px;
+    color: #222;
+}

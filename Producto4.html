@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Producto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Inclusión de la librería de iconos en HTML-->
+    <title>Página del producto</title>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+    </header>
+
+    <div class="container-title">Adidas - Boston Super OG</div>
+
+    <main>
+
+        <div class="container_img">
+            <img src="Images/Imagen4.jpg" alt="producto-4">
+        </div>
+
+        <div class="container-info-product">
+
+            <div class="container-price">
+                <span>105.00€</span>
+                <i class="fa-solid fa-angle-right"></i><!-- Para los iconos -->
+            </div>
+
+            <div class="container-details-product">
+                <div class="form-group">
+                    <label for="colour">Color</label> <!-- Se utiliza para asociar un texto descriptivo con un elemento de formulario -->
+                    <select name="colour" id="colour">
+                        <option disabled selected value="">Escoge una opción</option><!-- Opción por defecto, se desactiva al seleccionar otra-->
+                        <option value="rojo">Rojo</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="beige">Beige</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="size">Talla</label> <!-- Se utiliza para asociar un texto descriptivo con un elemento de formulario -->
+                    <select name="size" id="size">
+                        <option disabled selected value="">Escoge una opción</option><!-- Opción por defecto, se desactiva al seleccionar otra-->
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container-add-cart">
+                <div class="container-quantity">
+                    <input type="number" placeholder="1" value="1" min="1" class="input-quantity"><!-- El valor por defecto es el 1, además le pasamos el valor 1 como parámetro, y le indiciamos que el valor mínimo ha de ser 1-->
+                    <div class="btn-increment-decrement">
+                    </div>
+                </div>
+                <button class="btn-add-to-cart">
+                    <i class="fa-solid fa-plus"></i>
+                    Añadir al carrito
+                </button>
+            </div>
+
+            <div class="container-description">
+                <div class="title-description">
+                    <h4>Descripción</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-description">
+                    <p>
+                        ¡Sumérgete en el lujo y la comodidad con nuestras exclusivas zapatillas! Confeccionadas con los materiales más finos y diseñadas para la elegancia, 
+                        estas zapatillas son la definición de estilo sofisticado. La suave piel genuina se combina con artesanía experta para crear un calzado que no solo 
+                        es impresionante a la vista, sino también increíblemente cómodo de llevar. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-aditional-information">
+                <div class="title-aditional-information">
+                    <h4>Información adicional</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-aditional-information hidden">
+                </div>
+            </div>
+       
+            <div class="container-reviews">
+                <div class="title-reviews">
+                    <h4>Reseñas</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-reviews-information hidden">
+                    <textarea name="textarea" rows="6" cols="22">Reseñas</textarea>
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+
+            <div class="container-social">
+                <span>Compartir</span><!-- Es un elemento parecido a un <div> con la diferencia de que los <div> crean bloques de contenido, los <span> en cambio, no agregan saltos de línea adicionales y solo ocupa el espacio necesario para su contenido.-->
+                <div class="container-buttoms-social">
+                    <a href="https://mail.google.com/"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <section class="container-related-products"><!-- En este caso la sección representa un contenido independiente que tiene sentido por sí mismo, por lo que colocarlo fuera del <main> es apropiado, pero no es una característica necesaria, es decir puede ir dentro del main también.  -->
+        <h2>Productos Relacionados</h2>
+        <div class="card-list-products">
+            <div class="card">
+                <div class="card-img">
+                    <a href="Producto2.html"><img src="Images/Imagen2.jpg" alt="producto-2"></a>
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Nike - Roshe Run</h3>
+                        <p class="category">
+                            Footwear, Sneakers
+                        </p>
+                    </div>
+                    <div class="price">85.00€</div><!--Tu puedes escribir donde quieras-->
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <a href="Producto3.html"><img src="Images/Imagen3.jpg" alt="producto-3"></a>
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Common Projects Achilles</h3>
+                        <p class="category">
+                            Footwear, Sneakers
+                        </p>
+                    </div>
+                    <div class="price">255.00€</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <a href="Producto.html"><img src="Images/Imagen1.jpg" alt="producto-1"></a>
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Sault Rlaf</h3>
+                        <p class="category">
+                            Footwear, Sneakers
+                        </p>
+                    </div>
+                    <div class="price">95.00€</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <a href="Producto5.html"><img src="Images/Imagen5.jpg" alt="producto-5"></a>
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Common Projects Achilles</h3>
+                        <p class="category">
+                            Footwear, Sneakers
+                        </p>
+                    </div>
+                    <div class="price">250.00€</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer> <!-- Pie de página -->
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
