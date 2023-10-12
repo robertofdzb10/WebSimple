@@ -128,3 +128,47 @@ button:hover{
 .login a:hover{
     text-decoration: underline;
 }
+/*  <!-------------- Footer -------------->*/
+footer .info{
+    margin-top: 25px;   
+    margin-right:150px;
+    margin-left:150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .info .logo{
+    position: relative;
+    color: var(--txt-color);
+    text-decoration:none;
+    font-size: 2em;
+    font-weight: 700;
+}
+footer .info p{
+    color:var(--txt-color-dark);
+}
+footer .info ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .info ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+
+footer .info ul li a i{
+    font-size: 1.5em;   
+    color: #666
+}
+footer .info ul li:hover a i{
+    color: #1bbeb4
+}

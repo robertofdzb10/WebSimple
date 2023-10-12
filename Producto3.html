@@ -9,11 +9,17 @@
     <title>Página del producto</title>
 </head>
 <body>
-    <header>
-        <h1>Logo</h1>
+    <header id="header">
+        <nav id="nav-bar" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1800">
+            <div class="logo">
+                <h1>ZapatosKua</h1>
+            </div>
+            <ul class="nav-items">
+                <li><a class="nav-link" href="#relationed_products">Productos Relacionados</a></li>
+                <li><a class="nav-link" href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <div class="container-title">Common Projects Achilles</div>
 
     <main>
 
@@ -109,25 +115,10 @@
         </div>
 
     </main>
-
-    <section class="container-related-products"><!-- En este caso la sección representa un contenido independiente que tiene sentido por sí mismo, por lo que colocarlo fuera del <main> es apropiado, pero no es una característica necesaria, es decir puede ir dentro del main también.  -->
+   
+    <section class="container-related-products" id="relationed_products"><!-- En este caso la sección representa un contenido independiente que tiene sentido por sí mismo, por lo que colocarlo fuera del <main> es apropiado, pero no es una característica necesaria, es decir puede ir dentro del main también.-->  
         <h2>Productos Relacionados</h2>
         <div class="card-list-products">
-            <div class="card">
-                <div class="card-img">
-                    <a href="Producto2.html"><img src="Images/Imagen2.jpg" alt="producto-2"></a>
-                </div>
-                <div class="info-card">
-                    <div class="text-product">
-                        <h3>Nike - Roshe Run</h3>
-                        <p class="category">
-                            Footwear, Sneakers
-                        </p>
-                    </div>
-                    <div class="price">85.00€</div><!--Tu puedes escribir donde quieras-->
-                </div>
-            </div>
-
             <div class="card">
                 <div class="card-img">
                     <a href="Producto.html"><img src="Images/Imagen1.jpg" alt="producto-1"></a>
@@ -139,7 +130,22 @@
                             Footwear, Sneakers
                         </p>
                     </div>
-                    <div class="price">95.00€</div>
+                    <div class="price">85.00€</div><!--Tu puedes escribir donde quieras-->
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <a href="Producto2.html"><img src="Images/Imagen2.jpg" alt="producto-2"></a>
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Nike - Roshe Run</h3>
+                        <p class="category">
+                            Footwear, Sneakers
+                        </p>
+                    </div>
+                    <div class="price">255.00€</div>
                 </div>
             </div>
 
@@ -173,11 +179,19 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
-
-    <footer> <!-- Pie de página -->
-        <p>Footer</p>
+    <footer>
+        <div class="info" id="contact">
+            <a href="#" class="logo">ZapatosKua</a>
+            <p>Roberto Fernandez &copy All Rights Reserved 2022</p>
+            <ul>
+                <li><a href="https://mail.google.com/"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li> 
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
